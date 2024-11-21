@@ -9,6 +9,9 @@ public class OpeningTextManager : MonoBehaviour
     {
         openingText.gameObject.SetActive(true);
         openingText.text = "Welcome to Psyche!";
+         openingText.fontSize = 12;
+        openingText.color = Color.magenta;
+        openingText.ForceMeshUpdate();
 
         Invoke("ShowSecondText", 3f);
         Invoke("ShowThirdText", 6f); 
@@ -18,15 +21,22 @@ public class OpeningTextManager : MonoBehaviour
     void ShowSecondText()
     {
         openingText.text = "Fall 2024 - Spring 2025 Capstone project";
+        openingText.fontSize = 12;
+        openingText.color = Color.magenta;
+        openingText.ForceMeshUpdate();
     }
 
     void ShowThirdText()
     {
         openingText.text = "Quinn Cage, Trevor Huss, Sammy Belskus, Andrew Tan, Aidan Dubel";
+        openingText.fontSize = 12;
+        openingText.color = Color.magenta;
     }
 
     void HideText()
     {
         openingText.gameObject.SetActive(false);
+        openingText.fontSize = 12;
+        openingText.color = Color.magenta;
     }
 }
