@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 37863492}
   - component: {fileID: 37863491}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Restart Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 68336317}
   - component: {fileID: 68336316}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Pause Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 1136023734}
   - component: {fileID: 1136023733}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Pause Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,8 +1158,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1743642274}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1189,15 +1188,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -208
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -115
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 888
+      value: 1023
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1508,16 +1507,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743642273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 517}
+  m_LocalScale: {x: 1.0587559, y: 1.0587559, z: 1.0587559}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1553340272}
+  m_Father: {fileID: 1956277315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -896, y: 0}
+  m_AnchoredPosition: {x: -539, y: -378}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743642275
@@ -1632,7 +1631,7 @@ GameObject:
   - component: {fileID: 1805660654}
   - component: {fileID: 1805660653}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Restart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,6 +1769,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1743642274}
   - {fileID: 1805660652}
   - {fileID: 68336315}
   m_Father: {fileID: 1444152659}
