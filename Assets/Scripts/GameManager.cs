@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private bool isPaused = false; // makes sure the resume screen isnt loaded
-    public GameObject pauseScreen; // pa
+    public GameObject pauseScreen; // "Pause Screen" in MainScene
 
     private void Awake()
     {
