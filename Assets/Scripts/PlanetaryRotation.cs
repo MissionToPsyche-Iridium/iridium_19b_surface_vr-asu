@@ -24,7 +24,7 @@ public class PlanetaryRotation : MonoBehaviour
         float radius = GetComponent<SphereCollider>().radius; //will change. Not Robust enough
 
         float rotation = (2 * Mathf.PI * radius) / _period;
-        Vector3 rotate = new Vector3(0, 0, rotation);
+        Vector3 rotate = new Vector3(0, rotation, 0);
         transform.Rotate(rotate * Time.deltaTime, Space.Self);
     }
 }

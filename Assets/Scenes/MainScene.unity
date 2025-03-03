@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b379160dbb26252438cee8418da27f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axialTilt: {x: 45, y: 0, z: 13}
+  axialTilt: {x: 0, y: 0, z: 0}
   _period: 100
 --- !u!54 &1334988184
 Rigidbody:
