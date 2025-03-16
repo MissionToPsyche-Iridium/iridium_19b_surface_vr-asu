@@ -7,6 +7,7 @@ public class OpeningTextManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("OpeningTextManager called");
         openingText.gameObject.SetActive(true);
         openingText.text = "Welcome to Psyche!";
 
