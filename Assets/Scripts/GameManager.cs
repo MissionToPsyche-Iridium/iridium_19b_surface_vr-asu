@@ -7,8 +7,6 @@ public class GameManager : MonoBehaviour
 
     private bool isPaused = false; // makes sure the resume screen isnt loaded
     public GameObject pauseScreen; // "Pause Screen" in MainScene
-    public GameObject resumeButton; // "Resume Button" in MainScene
-    public GameObject pauseButton; // "Pause Button in MainScene
 
     private void Awake()
     {
@@ -23,26 +21,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        UpdateUI(false);
-    }
-
-
     public void PauseGame()
     {
-        isPaused = true;
-        Time.timeScale = 0;  // Freeze the game
-        UpdateUI(true);
-        Debug.Log("Game Paused");
-    }
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0 : 1;  // Freeze or resume game
 
-    public void ResumeGame()
-    {
-        isPaused = false;
-        Time.timeScale = 1;  // Resume the game
-        UpdateUI(false);
-        Debug.Log("Game Resumed");
+        if (pauseScreen != null) {
+            pauseScreen.SetActive(isPaused);  // Show or hide pause menu
+        }
+        Debug.Log("Pausing Game");
     }
 
     public void RestartGame()
@@ -53,10 +40,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Restarting Game"); 
     }
 
-    private void UpdateUI(bool isPaused)
+    public void ResumeGame()
     {
-        pauseScreen?.SetActive(isPaused);  // show/hide pause screen
-        resumeButton?.SetActive(isPaused); // show Resume button only when paused
-        pauseButton?.SetActive(!isPaused); // show Pause button only when NOT paused
+        isPaused = false;
+        Time.timeScale = 1; 
+        pauseScreen.SetActive(false);
+        Debug.Log("Resuming Game"); 
+
     }
 }
