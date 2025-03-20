@@ -4,11 +4,18 @@ using TMPro;
 public class OpeningTextManager : MonoBehaviour
 {
     public TextMeshProUGUI openingText; 
+    public GameObject psycheBadge;
 
     void Start()
     {
+        Debug.Log("OpeningTextManager called");
         openingText.gameObject.SetActive(true);
         openingText.text = "Welcome to Psyche!";
+
+        if (psycheBadge != null)
+        {
+            psycheBadge.SetActive(true);
+        }
 
         Invoke("ShowSecondText", 3f);
         Invoke("ShowThirdText", 6f); 
@@ -28,5 +35,10 @@ public class OpeningTextManager : MonoBehaviour
     void HideText()
     {
         openingText.gameObject.SetActive(false);
+
+        if (psycheBadge != null)
+        {
+            psycheBadge.SetActive(false); // hide the Psyche Badge
+        }
     }
 }
