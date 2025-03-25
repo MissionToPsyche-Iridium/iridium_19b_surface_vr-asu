@@ -9,6 +9,12 @@
       },
       "hash": "dfdc50830c201c53306fba4ab57ced763d2930c8"
     },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.4",
       "depth": 0,
@@ -282,7 +288,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.openxr": {
-      "version": "1.13.0",
+      "version": "1.13.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
