@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeAnimator: {fileID: 689236561}
   fadeGroup: {fileID: 689236562}
-  nextScene: TestingScene
+  nextScene: TestCraft
   delayBeforeFade: 20
   fadeDuration: 1
 --- !u!1 &1094831059
@@ -1970,14 +1970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1af1b998e1bca14b972e4a206c86aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  fadeDuration: 1
-  fadeMaterial: {fileID: 0}
-  isFading: 0
 --- !u!1 &1743642273
 GameObject:
   m_ObjectHideFlags: 0
