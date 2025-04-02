@@ -29,11 +29,13 @@ public class PlayerBehaviorScript : MonoBehaviour
             _velocity += _acceleration *  Time.deltaTime;
             _rocket.transform.position += new Vector3(0, _velocity * Time.deltaTime, 0);
         } else {
+            if (_videoPlayer.length > 0) {
             var progress = _videoPlayer.time / _videoPlayer.length;
             // calculate midpoint between -17.77/2 = -8.88 -> 0
 
             _progress.transform.localScale = new Vector3((float)(progress * 17.77), 1.0f, 0.5f);
             _progress.transform.localPosition = new Vector3((float)(-8.888 + progress * 8.888), 6, 0);
+            }
         }
     }
 
