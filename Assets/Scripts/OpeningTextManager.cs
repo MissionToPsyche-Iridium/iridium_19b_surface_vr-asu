@@ -13,7 +13,6 @@ public class OpeningTextManager : MonoBehaviour
             psycheBadge.SetActive(true);
         }
         Debug.Log("OpeningTextManager called");
-        openingText.gameObject.SetActive(true);
         openingText.text = "Welcome to Psyche!";
 
         Invoke("ShowSecondText", 3f);

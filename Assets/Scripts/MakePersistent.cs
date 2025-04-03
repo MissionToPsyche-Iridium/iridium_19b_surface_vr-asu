@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Makes the XR sim persist across scenes (only necesarry for desktop dev)
 public class MakePersistent : MonoBehaviour
 {
     private static bool isInitialized = false;

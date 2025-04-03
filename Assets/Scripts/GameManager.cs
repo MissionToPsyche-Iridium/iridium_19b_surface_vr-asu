@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 
@@ -47,11 +47,13 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Time.timeScale = 1; 
-        Destroy(gameObject); // deletes the GameManager obj
+        Time.timeScale = 1;
+        isPaused = false;
+        UpdateUI(false); // reset UI
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // rebuilds MainScene
-        Debug.Log("Restarting Game"); 
+        Debug.Log("Restarting Game");
     }
+
 
     private void UpdateUI(bool isPaused)
     {
