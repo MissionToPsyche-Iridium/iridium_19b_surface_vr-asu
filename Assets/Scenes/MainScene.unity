@@ -901,7 +901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -915, y: -950}
+  m_AnchoredPosition: {x: -915, y: -934}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696560124
@@ -960,8 +960,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b379160dbb26252438cee8418da27f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinAxis: {x: 0, y: 1, z: 0}
+  axialTilt: {x: 0, y: 0, z: 0}
   rotationSpeed: 10
 --- !u!135 &1627591625
 SphereCollider:
@@ -2946,7 +2946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 983.25, y: 560.25006}
+  m_AnchoredPosition: {x: 983.25, y: 670}
   m_SizeDelta: {x: 1966.5, y: 1120.5001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994987949
