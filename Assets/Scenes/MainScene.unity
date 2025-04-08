@@ -275,7 +275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &68336315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &390881159
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1296,6 +1296,7 @@ MonoBehaviour:
   fadeGroup: {fileID: 689236562}
   delayBeforeFade: 20
   fadeDuration: 1
+  playAgainButton: {fileID: 0}
 --- !u!1 &1090911016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,15 +2037,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -404.26715
+      value: -240
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 194.8081
+      value: 185
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.18087
+      value: -46
       objectReference: {fileID: 0}
     - target: {fileID: -7069878888052125705, guid: b3f43da7a0dca0442a5660b4c14052cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2106,8 +2107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b379160dbb26252438cee8418da27f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axialTilt: {x: 25, y: 0, z: 0}
-  _period: 2
+  spinAxis: {x: 0, y: 1, z: 0}
+  rotationSpeed: 10
 --- !u!135 &1627591625
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2128,7 +2129,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1.25
-  m_Center: {x: -1.4999934, y: 1.0610892, z: -1.2883762}
+  m_Center: {x: -240, y: 185, z: -46}
 --- !u!1 &1700902305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2141,7 @@ GameObject:
   - component: {fileID: 1700902306}
   - component: {fileID: 1700902309}
   - component: {fileID: 1700902308}
+  - component: {fileID: 1700902312}
   - component: {fileID: 1700902307}
   - component: {fileID: 1700902310}
   - component: {fileID: 1700902311}
@@ -2175,7 +2177,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700902305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
   m_Name: 
@@ -2343,7 +2345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700902305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
@@ -2392,6 +2394,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1af1b998e1bca14b972e4a206c86aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1700902312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700902305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!1 &1743642273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1805660652
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2694,7 +2714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1838550694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3107,10 +3127,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1184289810}
-  - {fileID: 1627591619}
   - {fileID: 2094822391}
   - {fileID: 1094831062}
   - {fileID: 73844567}
   - {fileID: 1098206988}
   - {fileID: 765502493}
   - {fileID: 1090911019}
+  - {fileID: 1627591619}
