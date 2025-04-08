@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateUI(false);
+        // UpdateUI(false);
     }
 
 
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0;  // Freeze the game
-        UpdateUI(true);
+        // UpdateUI(true);
         Debug.Log("Game Paused");
     }
 
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1;  // Resume the game
-        UpdateUI(false);
+        //UpdateUI(false);
         Debug.Log("Game Resumed");
     }
 
@@ -49,16 +49,16 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         isPaused = false;
-        UpdateUI(false); // reset UI
+        //UpdateUI(false); // reset UI
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // rebuilds MainScene
         Debug.Log("Restarting Game");
     }
 
 
-    private void UpdateUI(bool isPaused)
-    {
-        pauseScreen?.SetActive(isPaused);  // show/hide pause screen
-        resumeButton?.SetActive(isPaused); // show Resume button only when paused
-        pauseButton?.SetActive(!isPaused); // show Pause button only when NOT paused
-    }
+    // private void UpdateUI(bool isPaused)
+    // {
+    //     pauseScreen?.SetActive(isPaused);  // show/hide pause screen
+    //     resumeButton?.SetActive(isPaused); // show Resume button only when paused
+    //     pauseButton?.SetActive(!isPaused); // show Pause button only when NOT paused
+    // }
 }

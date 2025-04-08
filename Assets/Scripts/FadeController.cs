@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class VRFadeController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class VRFadeController : MonoBehaviour
     public CanvasGroup fadeGroup;
     public float delayBeforeFade = 20f;
     public float fadeDuration = 1f;
+    public GameObject playAgainButton; // PlayAgainButton in MainScene
 
     private string[] sceneCycle = { "MainScene", "LaunchScene", "TestCraft" };
     private int currentSceneIndex;
@@ -38,8 +40,26 @@ public class VRFadeController : MonoBehaviour
         fadeAnimator.SetTrigger("FadeNow"); // "FadeNow in animator pane
         yield return new WaitForSeconds(fadeDuration);
 
-        int nextIndex = (currentSceneIndex + 1) % sceneCycle.Length;
-        SceneManager.LoadScene(sceneCycle[nextIndex]); //loads new scene
+                if (currentSceneIndex < sceneCycle.Length - 1)
+        {
+            // Move to next scene
+            int nextIndex = currentSceneIndex + 1;
+            SceneManager.LoadScene(sceneCycle[nextIndex]);
+        }
+        else
+        {
+            // Final scene reached – show Play Again button
+            if (playAgainButton != null)
+            {
+                playAgainButton.SetActive(true);
+            }
+            Debug.Log("All scenes played");
+        }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(sceneCycle[0]);
     }
 }
 
