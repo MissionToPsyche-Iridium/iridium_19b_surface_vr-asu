@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axialTilt: {x: 0, y: 0, z: 0}
-  _period: 5000
+  rotationSpeed: 10
 --- !u!54 &106609251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1952,7 +1952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axialTilt: {x: 0, y: 0, z: 0}
-  _period: 10000
+  rotationSpeed: 1
 --- !u!1 &1944279357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2211,7 @@ MonoBehaviour:
   fadeGroup: {fileID: 245190404}
   delayBeforeFade: 20
   fadeDuration: 1
+  playAgainButton: {fileID: 0}
 --- !u!4 &2054050415
 Transform:
   m_ObjectHideFlags: 0
