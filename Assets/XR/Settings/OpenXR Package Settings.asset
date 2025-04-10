@@ -488,6 +488,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-1797227344158335401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a4959af032305438a04d410c6b0418, type: 3}
+  m_Name: InterceptCreateSessionFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 'Sample: Intercept Create Session'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.intercept
+  openxrExtensionStrings: XR_test
+  company: Unity
+  priority: 0
+  required: 0
+  message: Hello from C#!
 --- !u!114 &-1795838102377787399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,6 +722,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &1989849717125831053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a4959af032305438a04d410c6b0418, type: 3}
+  m_Name: InterceptCreateSessionFeature Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 1
+  nameUi: 'Sample: Intercept Create Session'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.intercept
+  openxrExtensionStrings: XR_test
+  company: Unity
+  priority: 0
+  required: 0
+  message: Hello from C#!
 --- !u!114 &2461889044403485654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +774,7 @@ MonoBehaviour:
   - {fileID: 7387945561617034688}
   - {fileID: -4486452839185257252}
   - {fileID: -6487929460299315320}
+  - {fileID: 1989849717125831053}
   - {fileID: 2645264630365511961}
   - {fileID: -6630479737656787177}
   - {fileID: -8047697106609789221}
@@ -1000,6 +1043,7 @@ MonoBehaviour:
   - {fileID: 4770019797898121083}
   - {fileID: -4743587094003332025}
   - {fileID: -7728985337838016157}
+  - {fileID: -1797227344158335401}
   - {fileID: -2810034784014578738}
   - {fileID: -55745330176348017}
   m_renderMode: 1

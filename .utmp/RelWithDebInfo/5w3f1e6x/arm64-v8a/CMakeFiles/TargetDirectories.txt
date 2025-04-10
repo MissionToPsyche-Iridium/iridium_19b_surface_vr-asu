@@ -1,0 +1,5 @@
+C:/Users/sammy/Desktop/iridium_19b_surface_vr-asu/.utmp/RelWithDebInfo/5w3f1e6x/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/sammy/Desktop/iridium_19b_surface_vr-asu/.utmp/RelWithDebInfo/5w3f1e6x/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/sammy/Desktop/iridium_19b_surface_vr-asu/.utmp/RelWithDebInfo/5w3f1e6x/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/sammy/Desktop/iridium_19b_surface_vr-asu/.utmp/RelWithDebInfo/5w3f1e6x/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/sammy/Desktop/iridium_19b_surface_vr-asu/.utmp/RelWithDebInfo/5w3f1e6x/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
