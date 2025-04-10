@@ -18,7 +18,7 @@ public class LaunchRocketBehavior : MonoBehaviour
         if (_inLaunch) {
             _velocity += _acceleration * Time.deltaTime;
             transform.position += new Vector3(0, _velocity * Time.deltaTime, 0);
-            var blend = Mathf.Min(transform.position.y / 40.0f, 1.0f);
+            var blend = Mathf.Min(transform.position.y / 250.0f, 1.0f);
             RenderSettings.skybox.SetFloat("_Blend", blend);
         } else {
             _waitTime += Time.deltaTime;
@@ -26,7 +26,7 @@ public class LaunchRocketBehavior : MonoBehaviour
 
         if (!_inLaunch && _waitTime > 16.0f) {
             _inLaunch = true;
-            _acceleration = 5.0f;
+            _acceleration = 20.0f;
         }
     }
 }
