@@ -2532,8 +2532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc59e2996b7d3e46bb568e6e8d3d796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeAnimator: {fileID: 689236561}
-  fadeGroup: {fileID: 689236562}
+  fadeAnimator: {fileID: 74622958}
+  fadeGroup: {fileID: 74622959}
   delayBeforeFade: 20
   fadeDuration: 1
   playAgainButton: {fileID: 0}
@@ -2767,7 +2767,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 994892535}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3019,7 +3019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingText: {fileID: 1743642275}
-  psycheBadge: {fileID: 703431343}
+  psycheBadge: {fileID: 460929812}
 --- !u!4 &1098206988
 Transform:
   m_ObjectHideFlags: 0
@@ -5288,7 +5288,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 994892535}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5573,7 +5573,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 994892535}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

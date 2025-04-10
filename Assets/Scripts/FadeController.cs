@@ -9,7 +9,7 @@ public class VRFadeController : MonoBehaviour
     public CanvasGroup fadeGroup;
     public float delayBeforeFade = 20f;
     public float fadeDuration = 1f;
-    public GameObject playAgainButton; // PlayAgainButton in MainScene
+    public GameObject playAgainButton; // PlayAgainButton2 in MainScene
 
     private string[] sceneCycle = { "MainScene", "LaunchScene", "TestCraft" };
     private int currentSceneIndex;
