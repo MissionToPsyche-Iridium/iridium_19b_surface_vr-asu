@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 133191900}
   - component: {fileID: 133191899}
   - component: {fileID: 133191898}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PlayAgainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 156393805}
   - component: {fileID: 156393807}
   - component: {fileID: 156393806}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Play Again Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056083, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Height
@@ -2180,7 +2180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848668414}
   - component: {fileID: 848668413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 906896400}
   - component: {fileID: 906896402}
   - component: {fileID: 906896401}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2397,7 +2397,7 @@ GameObject:
   - component: {fileID: 1180850850}
   - component: {fileID: 1180850854}
   - component: {fileID: 1180850853}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayAgainButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3222,7 +3222,7 @@ GameObject:
   - component: {fileID: 1740257452}
   - component: {fileID: 1740257451}
   - component: {fileID: 1740257450}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PlayAgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
