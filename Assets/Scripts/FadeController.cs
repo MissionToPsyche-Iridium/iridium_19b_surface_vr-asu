@@ -20,6 +20,15 @@ public class VRFadeController : MonoBehaviour
         fadeAnimator.ResetTrigger("FadeNow"); // resets fadenow from prev build
 
         currentSceneIndex = GetCurrentSceneIndex();
+
+        if (SceneManager.GetActiveScene().name == "MainScene")
+        {
+            delayBeforeFade = 40f;
+        }
+        else
+        {
+            delayBeforeFade = 20f;
+        }
         StartCoroutine(FadeAfterDelay());
     }
 
